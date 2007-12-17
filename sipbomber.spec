@@ -10,7 +10,6 @@ URL:		http://www.metalinkltd.com/downloads.php
 Source0:	http://metalinkltd.com/wp-content/uploads/%{name}_%{version}.tar.bz2
 Patch1:		sipbomber_0.7-testcases_dir.diff
 BuildRequires:	libqt-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Sipbomber is invaluable tool for SIP developers intended for
