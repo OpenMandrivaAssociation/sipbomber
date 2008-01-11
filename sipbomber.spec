@@ -42,21 +42,10 @@ export PATH
 
 install -d %{buildroot}%{_bindir}
 install -d %{buildroot}%{_datadir}/%{name}
-install -d %{buildroot}%{_menudir}
 
 install -m0755 sipb_main %{buildroot}%{_bindir}/%{name}
 install -m0644 testcases/* %{buildroot}%{_datadir}/%{name}/
 
-cat > %{buildroot}%{_menudir}/%{name} <<EOF
-?package(%{name}): \
-	command="%{name}" \
-	title="SipBomber" \
-	longtitle="%{Summary}" \
-	needs="x11" \
-	icon="development_tools_section.png" \
-	section="More Applications/Development/Tools" \
-	xdg="true"
-EOF
 
 install -d %{buildroot}%{_datadir}/applications
 cat <<EOF > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop
@@ -85,7 +74,6 @@ EOF
 %doc LICENSE README
 %{_bindir}/%{name}
 %{_datadir}/%{name}
-%{_menudir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop
 
 
