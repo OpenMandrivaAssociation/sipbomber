@@ -6,6 +6,7 @@ Version:	0.8
 Release:	%mkrel 1
 License:	GPL
 Group:		Networking/Other
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.metalinkltd.com/downloads.php
 Source0:	http://metalinkltd.com/wp-content/uploads/%{name}_%{version}.tar.bz2
 Patch1:		sipbomber_0.7-testcases_dir.diff
