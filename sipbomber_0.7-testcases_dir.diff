@@ -1,0 +1,11 @@
+--- sipb_def.h	2003-05-29 17:30:53.000000000 +0200
++++ sipb_def.h.oden	2006-02-12 14:42:58.000000000 +0100
+@@ -90,7 +90,7 @@
+ static const char* SIPB_SP_CERT_TEARDOWNLIST_DEF="CANCEL ACK";
+ 
+ static const char* SIPB_SP_CERT_TESTDIR         ="testcases dir"; 
+-static const char* SIPB_SP_CERT_TESTDIR_DEF     ="./testcases/*"; 
++static const char* SIPB_SP_CERT_TESTDIR_DEF     ="/usr/share/sipbomber";
+ 
+ static const char* SIPB_SP_CERT_TDTIMEOUT       ="teardown timeout";
+ static const char* SIPB_SP_CERT_TDTIMEOUT_DEF   ="200";
