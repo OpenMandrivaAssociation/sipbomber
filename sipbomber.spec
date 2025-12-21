@@ -10,6 +10,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		https://www.metalinkltd.com/downloads.php
 Source0:	http://metalinkltd.com/wp-content/uploads/%{name}_%{version}.tar.bz2
 Patch1:		sipbomber_0.7-testcases_dir.diff
+BuildRequires:	make
 BuildRequires:	libqt-devel
 
 %description
