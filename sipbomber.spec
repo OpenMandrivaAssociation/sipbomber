@@ -3,7 +3,7 @@
 Summary:	%{Summary}
 Name:		sipbomber
 Version:	0.8
-Release:	%mkrel 4
+Release:	5
 License:	GPL
 Group:		Networking/Other
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
